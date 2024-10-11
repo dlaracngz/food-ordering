@@ -8,9 +8,22 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      container: {
+        screens: {
+          xs: "375px",
+          sm: "640px",
+          md: "768px",
+          lg: "1024px",
+          xl: "1140px",
+        },
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: "#ffbe33",
+        secondary: "#222831",
+      },
+      fontFamily: {
+        dancing: ["var(--font-dancing-script)", "cursive"],
+        openSans: ["var(--font-open-sans)", "sans-serif"],
       },
     },
   },
