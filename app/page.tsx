@@ -3,6 +3,7 @@ import ProductWrapper from "@/components/products/ProductWrapper";
 import Reservation from "@/components/Reservation";
 import Campaigns from "@/components/ui/Campaigns";
 import Carousel from "@/components/ui/Carousel";
+import Customers from "@/components/ui/Customers";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <ProductWrapper />
       <About />
       <Reservation />
+      <Customers />
     </div>
   );
 }
