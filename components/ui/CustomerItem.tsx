@@ -1,10 +1,15 @@
 import Image from "next/image";
-import cust2 from "@/public/cust2.jpg";
+import { StaticImageData } from "next/image";
+import React from "react";
 
-const CustomerItem = () => {
+interface CustomerItemProps {
+  imgSrc: StaticImageData;
+}
+
+const CustomerItem: React.FC<CustomerItemProps> = ({ imgSrc }) => {
   return (
     <div>
-      <div className="bg-secondary rounded-xl p-6">
+      <div className="bg-secondary rounded-xl p-6 mx-4 text-white">
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero magni
           alias quaerat eligendi quos quidem hic at dolores maiores aperiam,
@@ -13,13 +18,15 @@ const CustomerItem = () => {
         <h6 className="font-bold mt-5 mb-1">Moana Michell</h6>
         <p>magna aliqua</p>
       </div>
-      <Image
-        src={cust2}
-        alt=""
-        width={100}
-        height={100}
-        className="mt-6 rounded-full border-4 border-primary"
-      />
+      <div className="relative w-28 h-28 border-4 border-primary rounded-full mt-6 before:content-[''] before:absolute before:top-0 flex justify-center before:-translate-y-3 before:rotate-45 before:bg-primary before:w-5 before:h-5">
+        <Image
+          src={imgSrc}
+          alt=""
+          layout="fill"
+          className="rounded-full"
+          objectFit="contain"
+        />
+      </div>
     </div>
   );
 };

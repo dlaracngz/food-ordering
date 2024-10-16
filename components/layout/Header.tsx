@@ -66,9 +66,9 @@ const Header = () => {
               </ul>
             </nav>
             <div className="flex gap-2 items-center">
-              <a href="/">
+              <Link href="/auth/login">
                 <FaUser className="hover:text-primary cursor-pointer" />
-              </a>
+              </Link>
               <a href="/">
                 <FaShoppingCart className="hover:text-primary cursor-pointer" />
               </a>

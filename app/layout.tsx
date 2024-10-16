@@ -1,21 +1,66 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import { Dancing_Script, Open_Sans } from "next/font/google";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-const dancingScript = Dancing_Script({
-  subsets: ["latin"],
+
+const dancingScript = localFont({
+  src: [
+    {
+      path: "./fonts/DancingScript-Regular.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "./fonts/DancingScript-Medium.ttf",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "./fonts/DancingScript-Semibold.ttf",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "./fonts/DancingScript-Bold.ttf",
+      weight: "700",
+      style: "normal",
+    },
+  ],
   variable: "--font-dancing-script",
-  weight: ["400", "500", "600", "700"],
 });
 
-const openSans = Open_Sans({
-  subsets: ["latin"],
+const openSans = localFont({
+  src: [
+    {
+      path: "./fonts/OpenSans-Light.ttf",
+      weight: "300",
+      style: "normal",
+    },
+    {
+      path: "./fonts/OpenSans-Regular.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "./fonts/OpenSans-Medium.ttf",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "./fonts/OpenSans-SemiBold.ttf",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "./fonts/OpenSans-Bold.ttf",
+      weight: "700",
+      style: "normal",
+    },
+  ],
   variable: "--font-open-sans",
-  weight: ["400", "500", "600", "700"],
 });
 
 const geistSans = localFont({

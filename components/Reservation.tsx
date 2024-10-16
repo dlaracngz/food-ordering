@@ -1,8 +1,8 @@
 "use client";
-import Input from "@/components/form/input";
 import React from "react";
 import { useFormik, FormikHelpers } from "formik";
 import { reservationSchema } from "@/schema/reservationSchema";
+import InputComponent from "@/components/form/input";
 
 interface FormValues {
   fullName: string;
@@ -82,9 +82,9 @@ const Reservation = () => {
     <div className="container mx-auto py-10 px-2">
       <h2 className="font-dancing text-[2.5rem] mb-5">Book A Table</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <form className="flex flex-col gap-7" onSubmit={formik.handleSubmit}>
+        <form className="flex flex-col gap-4" onSubmit={formik.handleSubmit}>
           {inputs.map((input) => (
-            <Input
+            <InputComponent
               key={input.id}
               {...input}
               onChange={formik.handleChange}

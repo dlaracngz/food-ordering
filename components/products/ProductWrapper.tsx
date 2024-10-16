@@ -3,7 +3,7 @@ import ProductItem from "./ProductItem";
 
 const ProductWrapper = () => {
   return (
-    <div className="container mx-auto px-2">
+    <div className="container mx-auto px-2 my-6">
       <div>
         <h1 className="font-dancing font-bold text-center text-[2.5rem]">
           Our Menu
@@ -26,7 +26,7 @@ const ProductWrapper = () => {
           </li>
         </ul>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mb-7">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mb-8">
         <ProductItem />
         <ProductItem />
         <ProductItem />
@@ -35,7 +35,7 @@ const ProductWrapper = () => {
         <ProductItem />
       </div>
       <div className="w-full flex justify-center">
-        <button className="btn mb-7">View More</button>
+        <button className="btn mb-5">View More</button>
       </div>
     </div>
   );

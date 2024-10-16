@@ -12,7 +12,7 @@ const Campaigns = () => {
     { title: "Pizza Days", discount: "15", imageSrc: pizzaPicture.src },
   ];
   return (
-    <div className="container mx-auto px-2 grid grid-cols-1 lg:grid-cols-2 gap-6 my-[70px] text-white">
+    <div className="container mx-auto px-2 grid grid-cols-1 lg:grid-cols-2 gap-6 my-[50px] text-white">
       {campaigns.map((campaign, index) => (
         <CampaignItem
           key={index}
