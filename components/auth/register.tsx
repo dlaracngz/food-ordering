@@ -69,7 +69,7 @@ const Register = () => {
     },
   ];
   return (
-    <div className="container mx-auto px-2 my-16">
+    <div className="container mx-auto px-2 my-20">
       <h1 className="font-dancing font-bold text-[45px] mb-6 text-center">
         Register
       </h1>

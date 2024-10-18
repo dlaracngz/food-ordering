@@ -69,9 +69,9 @@ const Header = () => {
               <Link href="/auth/login">
                 <FaUser className="hover:text-primary cursor-pointer" />
               </Link>
-              <a href="/">
+              <Link href="/cart">
                 <FaShoppingCart className="hover:text-primary cursor-pointer" />
-              </a>
+              </Link>
               <a onClick={toggleModal}>
                 <FaSearch className="hover:text-primary cursor-pointer" />
               </a>

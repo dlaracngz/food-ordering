@@ -2,8 +2,8 @@
 import React from "react";
 import Slider from "react-slick";
 import CustomerItem from "./CustomerItem";
-import cust1 from "@/public/cust1.jpg";
-import cust2 from "@/public/cust2.jpg";
+import cust1 from "@/public/images/cust1.jpg";
+import cust2 from "@/public/images/cust2.jpg";
 import {
   MdOutlineKeyboardArrowLeft,
   MdOutlineKeyboardArrowRight,

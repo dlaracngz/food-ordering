@@ -1,6 +1,6 @@
 import Image from "next/image";
 import product from "@/public/pizzza2.png";
-import size from "@/public/size.png";
+import size from "@/public/images/size.png";
 import React from "react";
 
 const ProductDetail = () => {

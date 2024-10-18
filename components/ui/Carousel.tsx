@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import hero from "@/public/hero-bg.jpg";
+import hero from "@/public/images/hero-bg.jpg";
 import Image from "next/image";
 
 const Carousel = () => {

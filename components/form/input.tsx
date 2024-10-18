@@ -39,7 +39,7 @@ const InputComponent: React.FC<InputProps> = ({
       />
       <span
         className={`absolute transition-all duration-300 ease-in ${
-          isFocused || value
+          isFocused && value
             ? "top-[2px] left-6 text-[13px]"
             : "top-[17px] left-6 text-[16px]"
         }`}
