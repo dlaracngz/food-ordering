@@ -5,7 +5,7 @@ const Cart = () => {
   return (
     <div className="min-h-[calc(100vh_-_483px)] h-full">
       <div className="flex flex-col md:flex-row justify-between md:items-center gap-4 min-h-[calc(100vh_-_483px)] px-2 py-6 md:py-0">
-        <div className="flex-1 mx-2 md:mx-10 overflow-x-auto sidebarScrollbar">
+        <div className="flex-1 mx-2 md:mx-10 overflow-x-auto sidebarScrollbar rounded-xl">
           <table className="w-full text-sm text-center text-gray-400 min-w-[1000px]">
             <thead className="text-xs uppercase bg-gray-700">
               <tr>

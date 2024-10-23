@@ -1,10 +1,10 @@
-import AdminLogin from "@/components/admin/adminLogin";
+import Admin from "@/components/admin/Admin";
 import React from "react";
 
 const AdminPage = () => {
   return (
     <div>
-      <AdminLogin />
+      <Admin />
     </div>
   );
 };

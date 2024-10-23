@@ -8,8 +8,8 @@ const Order = () => {
   return (
     <div className="min-h-[calc(100vh_-_467px)] h-full">
       <div className="flex flex-col justify-center min-h-[calc(100vh_-_467px)] gap-6 px-10 py-20 w-full">
-        <div className="overflow-x-auto sidebarScrollbar">
-          <table className="text-sm w-full text-center min-w-[100px] text-gray-400">
+        <div className="overflow-x-auto sidebarScrollbar rounded-xl">
+          <table className="text-sm w-full text-center min-w-[1000px] text-gray-400">
             <thead className="text-xs bg-gray-700 uppercase">
               <tr>
                 <th className="py-3 px-6">ORDER ID</th>
@@ -39,7 +39,7 @@ const Order = () => {
             <Image src={payment} alt="" width={40} height={40} />
             <h4 className="text-[16px]">Payment</h4>
           </div>
-          <div className="flex flex-col gap-y-2 items-center">
+          <div className="flex flex-col gap-y-2 items-center animate-pulse">
             <Image src={preparing} alt="" width={40} height={40} />
             <h4 className="text-[16px]">Preparing</h4>
           </div>

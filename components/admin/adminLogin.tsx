@@ -47,7 +47,7 @@ const AdminLogin = () => {
     },
   ];
   return (
-    <div className="container mx-auto px-2 flex flex-col items-center h-full justify-center min-h-[calc(100vh_-_491px)]">
+    <div className="container mx-auto px-2 flex flex-col items-center h-full justify-center min-h-[calc(100vh_-_467px)]">
       <h1 className="font-dancing font-bold text-[45px] text-center mb-6">
         Admin Login
       </h1>
