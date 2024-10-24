@@ -23,7 +23,9 @@ const Profile = () => {
               height={100}
               className="rounded-full"
             />
-            <span className="font-bold text-xl">Dilara Cengiz</span>
+            <span className="font-bold text-xl whitespace-nowrap">
+              Dilara Cengiz
+            </span>
           </div>
           <ul>
             <li>

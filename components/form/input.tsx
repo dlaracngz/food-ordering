@@ -34,7 +34,7 @@ const InputComponent: React.FC<InputProps> = ({
         value={value}
         onClick={() => setIsFocused(true)}
         className={`border border-primary outline-none h-[60px] w-full px-6 rounded-[5px] ${
-          errorMessage && touched ? "border-red-600" : "border-[#999]"
+          errorMessage && touched ? "border-red-600" : "border-primary"
         }`}
       />
       <span

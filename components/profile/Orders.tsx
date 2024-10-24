@@ -4,9 +4,9 @@ const Orders = () => {
   return (
     <div>
       <h1 className="font-dancing font-bold text-[45px] mb-2">Orders</h1>
-      <div className="overflow-x-auto sidebarScrollbar rounded-xl">
-        <table className="w-full text-sm text-center text-gray-400 min-w-[700px]">
-          <thead className="text-xs bg-gray-700 uppercase">
+      <div className="overflow-auto sidebarScrollbar max-h-[300px] rounded-xl">
+        <table className="w-full text-sm text-center text-gray-400 min-w-[600px]">
+          <thead className="text-xs bg-gray-700 uppercase sticky top-0 z-10">
             <tr>
               <th scope="col" className="py-3 px-6">
                 ID

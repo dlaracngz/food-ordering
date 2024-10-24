@@ -34,7 +34,9 @@ const Header = () => {
                 <li>
                   <Link
                     href="/"
-                    className="hover:text-primary transition-text duration-200 ease-in"
+                    className={`hover:text-primary transition-text duration-200 ease-in ${
+                      router === "/" ? "text-primary" : ""
+                    }`}
                   >
                     HOME
                   </Link>
@@ -42,7 +44,9 @@ const Header = () => {
                 <li>
                   <Link
                     href="/menu"
-                    className="hover:text-primary transition-text duration-200 ease-in"
+                    className={`hover:text-primary transition-text duration-200 ease-in ${
+                      router === "/menu" ? "text-primary" : ""
+                    }`}
                   >
                     MENU
                   </Link>
@@ -50,7 +54,9 @@ const Header = () => {
                 <li>
                   <Link
                     href="/about"
-                    className="hover:text-primary transition-text duration-200 ease-in"
+                    className={`hover:text-primary transition-text duration-200 ease-in ${
+                      router === "/about" ? "text-primary" : ""
+                    }`}
                   >
                     ABOUT
                   </Link>
@@ -58,7 +64,9 @@ const Header = () => {
                 <li>
                   <Link
                     href="/bookTable"
-                    className="hover:text-primary transition-text duration-200 ease-in"
+                    className={`hover:text-primary transition-text duration-200 ease-in ${
+                      router === "/bookTable" ? "text-primary" : ""
+                    }`}
                   >
                     BOOK TABLE
                   </Link>
