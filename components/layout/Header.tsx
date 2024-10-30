@@ -5,6 +5,8 @@ import { usePathname } from "next/navigation";
 import { FaUser, FaShoppingCart, FaSearch } from "react-icons/fa";
 import { IoMenu } from "react-icons/io5";
 import SearchModal from "../ui/SearchModal";
+import { useSelector } from "react-redux";
+import { RootState } from "@/redux/store";
 
 const Header = () => {
   const [isSearchModal, setIsSearchModal] = useState(false);
@@ -16,6 +18,7 @@ const Header = () => {
     setIsMenuModal(!isMenuModal);
   };
   const router = usePathname();
+  const quantity = useSelector((state: RootState) => state.card.quantity);
 
   return (
     <div>
@@ -77,8 +80,11 @@ const Header = () => {
               <Link href="/auth/login">
                 <FaUser className="hover:text-primary cursor-pointer" />
               </Link>
-              <Link href="/cart">
+              <Link href="/cart" className="relative">
                 <FaShoppingCart className="hover:text-primary cursor-pointer" />
+                <div className="absolute -top-2 -right-2 text-black text-xs bg-primary text-center align-middle rounded-full w-4 h-4">
+                  {quantity}
+                </div>
               </Link>
               <a onClick={toggleModal}>
                 <FaSearch className="hover:text-primary cursor-pointer" />

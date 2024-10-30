@@ -103,7 +103,6 @@ const Footer = () => {
             />
           ))}
         </div>
-
         <button className="btn mt-3 !w-28" type="submit">
           Update
         </button>
